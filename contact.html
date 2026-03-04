@@ -7,39 +7,47 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header>
-    <h1>Pizza Lovers</h1>
-    <nav class="top-nav">
-      <a href="index.html">Home</a>
-      <a href="contact.html" aria-current="page">Contact Us</a>
-    </nav>
+    <div class="container">
+      <h1>Pizza Lovers</h1>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Contact Us</h2>
-    <p>Want us to add a new pizza recipe? Send us your recommendation!</p>
+  <main id="main">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Want us to add a new pizza recipe? Send us your recommendation!</p>
 
-    <section class="contact-card">
-      <h3>Social Pages</h3>
-      <p>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> |
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
-        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> |
-        <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-      </p>
+      <section class="contact-card">
+        <h3>Social Pages</h3>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        </div>
 
-      <h3>Email Us a Pizza Recommendation</h3>
-      <p>Click the button below to email us your suggested pizza and ingredients.</p>
+        <h3 style="margin-top:16px;">Email Us a Pizza Recommendation</h3>
+        <p>Click the button below to email us your suggested pizza and ingredients.</p>
 
-      <a class="email-button"
-         href="mailto:pizzalovers@example.com?subject=Pizza%20Recommendation&body=Hi%20Pizza%20Lovers!%0A%0AI%20recommend%20adding%20this%20pizza%3A%0A-%20Pizza%20name%3A%20%0A-%20Toppings%2Fingredients%3A%20%0A-%20Sauce%3A%20%0A-%20Anything%20else%3A%20%0A%0AThanks!">
-        Email a Recommendation
-      </a>
-    </section>
+        <a class="email-button"
+           href="mailto:pizzalovers@example.com?subject=Pizza%20Recommendation&body=Hi%20Pizza%20Lovers!%0A%0AI%20recommend%20adding%20this%20pizza%3A%0A-%20Pizza%20name%3A%20%0A-%20Toppings%2Fingredients%3A%20%0A-%20Sauce%3A%20%0A-%20Anything%20else%3A%20%0A%0AThanks!">
+          Email a Recommendation
+        </a>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>© 2026 Pizza Lovers - Made with ❤️ by Pizza Enthusiasts!</p>
+    <div class="container">
+      <p>© 2026 Pizza Lovers - Made with ❤️ by Pizza Enthusiasts!</p>
+    </div>
   </footer>
 </body>
 </html>

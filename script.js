@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       recipeDetails.forEach((otherEl) => {
         if (otherEl !== detailsEl) otherEl.removeAttribute("open");
       });
+
+      // Optional: ensure the opened recipe is visible on small screens
+      if (window.matchMedia("(max-width: 640px)").matches) {
+        detailsEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   });
 });
